@@ -257,9 +257,9 @@ class FanzMiya:
         CK = Cons().input(' Choose 1 / 2 >>  ')
         #----------[ LOGIN-COOKIE ]----------#
         if CK =='1' or CK =='01':
-            Cons().print(f'{PINK}______________________')
-            Cons().print(f'\n {H}# {M}WARNING \n\n {C}*{P} Gunakan Cookies fb \n {C}*{P}  Gunakan Fb Tumbal \n {C}*{P} jangan akun pribadi \n {C}*{P} Hindari akun Fb Anda Dari checkpoint')
-            Cons().print(f'{PINK}______________________')
+            Cons().print(f'{PINK}________________________')
+            Cons().print(f'\n {H}#{K}#{C}# {M}WARNING {C}#{K}#{H}#\n\n {C}*{P} Gunakan Cookies fb \n {C}*{P} Gunakan Fb Tumbal \n {C}*{P} jangan akun pribadi \n {C}*{P} Hindari Fb Dari checkpoint')
+            Cons().print(f'{PINK}________________________')
             Cons().print(f'')
             cookie = Cons().input(f'\n {H} COOKIE : ')
             try:

@@ -241,13 +241,19 @@ class FanzMiya:
     #----------[ MENU-LOGIN ]----------#
     def menu_login(self, file = 'data/login/'):
         self.banner()
-        print('Userip  > {K}{self.ip}')
-        print('Country > {K}{self.negara}')
+        #print('Userip  > {K}{self.ip}')
+        #print('Country > {K}{self.negara}')
         print('')
-        Cons().print(f'1 {K} login via cookies')
-        Cons().print(f'2 {K} login via id/email')
+        Cons().print(f'{PINK}________________________')
+        Cons().print(f'{C}      SELECT METHODE       ')
+        Cons().print(f'{PINK}________________________')
+        Cons().print(f'')
+        Cons().print(f'{H}1 >>{K} LOGIN VIA COOKIE')
+        Cons().print(f'{H}2 >>{K} LOGIN VIA EMAIL/ID')
+        Cons().print(f'')
+        Cons().print(f'{PINK}________________________')
         CK = Cons().input('>> Choose : ')
-        
+        Cons().print(f'{PINK}________________________')
         #----------[ LOGIN-COOKIE ]----------#
         if CK =='1' or CK =='01':
             Cons().print(f'\n {J}# {M}WARNING \n\n {J}*{A} cookies harus fres \n {J}*{A} saran cookie dough \n {J}*{A} jangan akun pribadi')

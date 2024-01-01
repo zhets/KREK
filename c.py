@@ -252,30 +252,33 @@ class FanzMiya:
         Cons().print(f'{H}2 >>{K} LOGIN VIA EMAIL/ID')
         Cons().print(f'')
         Cons().print(f'{PINK}________________________')
-        CK = Cons().input('>> Choose : ')
+        Cons().print(f'')
+        Cons().print(f'{PINK}________________________')
+        CK = Cons().input('{H} Choose : ')
         Cons().print(f'{PINK}________________________')
         #----------[ LOGIN-COOKIE ]----------#
         if CK =='1' or CK =='01':
             Cons().print(f'\n {J}# {M}WARNING \n\n {J}*{A} cookies harus fres \n {J}*{A} saran cookie dough \n {J}*{A} jangan akun pribadi')
-            cookie = Cons().input(f'\n {J}»{A} KUKIS : ')
+            Cons().print(f'')
+            cookie = Cons().input(f'\n {H} COOKIE : ')
             try:
                 tok = self.dapatkan_token_eaab(cookie,'')
-                Cons().print(f' {J}»{A} TOKEN : {H}{tok}')
+                Cons().print(f' {H} TOKEN : {H}{tok}')
                 self.dapatkan_username(cookie)
                 self.follows_dong(cookie, tok)
                 with open(file+'.cookie.json',mode='w',encoding='utf8') as wr:
                     wr.write(json.dumps({'Cookie': cookie}))
                     wr.close()
-                Cons().print(f'\n {J}#{A} login berhasil, silakan jalankan ulang pythonnya'); sys.exit()
+                Cons().print(f'\n {H}#{P} login berhasil, silakan jalankan ulang script nya'); sys.exit()
             except Exception as e: sys.exit(e)
             
         #----------[ LOGIN-ID-NAMA-EMAIL ]----------#
         elif CK =='2' or CK =='02':
-            Cons().print(f'\n {J}*{A} masukan id \n {J}*{A} masukan nama \n {J}*{A} masukan email')
-            userid = Cons().input(f'\n {J}»{A} id/nama/email : ')
-            if userid =='': Cons().print(f'\n {J}*_>{M} kamu kaya kontol');exit()
-            userpas = Cons().input(f' {J}»{A} Sandi : ')
-            if userpas =='': Cons().print(f'\n {J}*_>{M} kamu kaya kontol');exit()
+            Cons().print(f'\n {H}#{P} masukan id \n {H}#{P} masukan nama \n {H}#{P} masukan email')
+            userid = Cons().input(f'\n {H}»{P} id/nama/email : ')
+            if userid =='': Cons().print(f'\n {H}*{M} kamu kaya kontol');exit()
+            userpas = Cons().input(f' {H}»{P} Password : ')
+            if userpas =='': Cons().print(f'\n {H}*{M} kamu kaya kontol');exit()
             try:
                 with requests.Session() as xyc:
                     response = xyc.get('https://m.facebook.com/login/?next=https%3A%2F%2Fm.facebook.com%2Fadsmanager%2Fmanage%2Fcampaigns%3Fwtsid%3Drdr_072QbFsCLxwR5Rssa&ref=dbl&fl&login_from_aymh=1&refid=9').text

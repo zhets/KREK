@@ -2,7 +2,7 @@
 # coding         : utf-8
 # Author         : LT | PROJECT
 # Python version : 3.11.6 / 1.007.2
-# Github         : https://github.com/nixyproject-cfd
+# Github         : https://github.com/LunaticTunnel
 #----------[ MODULE ]----------#
 try:
     import os, re, sys, json, time, random, requests
@@ -244,8 +244,8 @@ class FanzMiya:
         print('Userip  > {K}{self.ip}')
         print('Country > {K}{self.negara}')
         print('')
-        print('1 {K} login via cookies')
-        print('2 {K} login via id/email')
+        cons().print(f'1 {K} login via cookies')
+        Cons().print(f'2 {K} login via id/email')
         CK = Cons().input('>> Choose : ')
         
         #----------[ LOGIN-COOKIE ]----------#

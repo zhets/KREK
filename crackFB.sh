@@ -1,8 +1,7 @@
 #!/bin/bash
-# LT
-cd /root
-rm -rf crackFB.sh
-rm -rf c.py
+# // Bukan Hekel 
 clear
-wget -q  https://raw.githubusercontent.com/LunaticTunnel/KREK/main/c.py && chmod +x c.py
+cd /root
+rm -rf crackFB.sh c.py
+wget -q  https://raw.githubusercontent.com/zhets/KREK/main/c.py ; chmod +x c.py
 python c.py

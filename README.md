@@ -1,12 +1,12 @@
 ## Multi Command
 ```
-$ git clone https://github.com/LunaticTunnel/KREK
+git clone https://github.com/LunaticTunnel/KREK
 ```
 ```
-$ cd KREK
+cd KREK
 ```
 ```
-$ python c.py
+python c.py
 ```
 
 ## Single Command via shell

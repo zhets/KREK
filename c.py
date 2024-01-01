@@ -482,8 +482,8 @@ class Crack:
     def Generate_list(self):
         global prog,des
         print('\n')
-        Cons().print(f'1 {C}Reguler')
-        Cons().print(f'2 {C}RegulerV2')
+        Cons().print(f'1 Reguler ')
+        Cons().print(f'2 RegulerV2 ')
         Cons().print(f' ')
         execlogin = Cons().input(f'\n {H}»{P} Choose 1 / 2 : ')
         Cons().print(f'\n {P}[{H}*{P}] Hasil OK Simpan/{H}OK/{self.okc} \n {P}[{H}*{P}] Hasil CP Simpan/{K}CP/{self.cpc} \n\n {H}#{P} Mainkan Mode Pesawat Setiap 300 ID\n')
@@ -611,8 +611,8 @@ class Crack:
 class CrackM:   
     # fuction init
     def __init__(self):
-        self.okc = ('OK.txt')
-        self.cpc = ('CP.txt')
+        self.okc = ('BAGUS.txt')
+        self.cpc = ('JELEK.txt')
         self.suck, self.loop, self.check = 0,0,0
         
     #----------[ WORDLIST ]----------# 

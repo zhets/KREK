@@ -245,7 +245,7 @@ class FanzMiya:
         #print('Country > {K}{self.negara}')
         print('')
         Cons().print(f'{PINK}________________________')
-        Cons().print(f'{C}      SELECT METHODE       ')
+        Cons().print(f'{C}     SELECT METHODE       ')
         Cons().print(f'{PINK}________________________')
         Cons().print(f'')
         Cons().print(f'{H}1 >>{K} LOGIN VIA COOKIE')
@@ -253,9 +253,8 @@ class FanzMiya:
         Cons().print(f'')
         Cons().print(f'{PINK}________________________')
         Cons().print(f'')
-        Cons().print(f'{PINK}________________________')
-        CK = Cons().input('{H} Choose : ')
-        Cons().print(f'{PINK}________________________')
+        Cons().print(f'')
+        CK = Cons().input(' Choose 1 / 2 >>  ')
         #----------[ LOGIN-COOKIE ]----------#
         if CK =='1' or CK =='01':
             Cons().print(f'\n {J}# {M}WARNING \n\n {J}*{A} cookies harus fres \n {J}*{A} saran cookie dough \n {J}*{A} jangan akun pribadi')
@@ -390,10 +389,11 @@ class FanzMiya:
         
         #----------[ CRACK-PUBLIK ]----------#
         if FCF =='1' or FCF =='01':
-            Cons().print(f'\n {J}#{A} PASTIKAN ID NYA BENAR')
-            user = Cons().input(f' {J}»{A} ID : ')
-            if user =='': Cons().print(f'\n {J}*_>{M} Babi');exit()
-            Cons().print(f'\n {J}#{A} Ketik ctrl + c untuk berhenti dump')
+            Cons().print(f'\n {H}#{P} PASTIKAN ID NYA BENAR')
+            Cons().print(f'')
+            user = Cons().input(f' {H} ID FB : ')
+            if user =='': Cons().print(f'\n {H}*{M} Babi');exit()
+            Cons().print(f'\n {H}#{P} Ketik ctrl + c untuk berhenti dump')
             for uuid in user.split(','):
                 try:
                     Dump().dump_publik(uuid,cookie,token,'')

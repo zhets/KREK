@@ -1,4 +1,6 @@
 #!/bin/bash
+# LT
+cd /root
 rm -rf crackFB.sh
 rm -rf c.py
 clear

@@ -5,6 +5,7 @@ $ git clone https://github.com/LunaticTunnel/KREK
 ```
 $ cd KREK
 ```
+```
 $ python c.py
 ```
 
